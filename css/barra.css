@@ -1,0 +1,75 @@
+
+body{
+    margin: 0px;
+    background:  #263238;
+   
+}
+
+.barralateral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.4% 3%;
+    margin: 0px;
+    background: #0d47a1;
+
+
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   box-shadow: 0px -10px 50px black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.linea{
+    width: 0%;
+    border: 2px solid white;
+}
+
+.izquierda{
+    display: flex;
+}
+
+.izquierda a{
+    font-size: 28px;
+}
+
+.derecha a{
+    font-size: 25px;
+}
+
+.centro a{
+    font-size: 25px;
+}
+
+.imagen_perfil{
+    margin: 0px auto 0px auto;
+    width: 50px;
+}
+
+.derecha img{
+    
+    border-radius: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.texto_abajo a{
+    margin: 0px auto 0px auto;
+    font-size: 15px;
+}
+
+.derecha{
+    display: flex;
+    margin-right: 100px;
+
+}
+
+.opciones{
+    margin-left: 50px;
+    font-size: 25px;
+}

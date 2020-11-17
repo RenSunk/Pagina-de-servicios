@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/barra.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja Con Nostros</title>
+</head>
+<body>
+    <script>
+        if(localStorage.getItem("datos")){
+            location.href = "./solicitarservicio.html"
+        }
+    </script>
+        <div class="barralateral">
+            <div class="izquierda">
+                <div class="opciones">
+                    <div>
+                        <a class="hover-linea-a" href="./index.html">Inicio</a>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+                <div class="opciones">
+                    <div>
+                        <a class="hover-linea-a" href="./trabaja.html">Trabaja con nosostros</a>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="centro">
+                <a href="./servicio.html">Servicios</a>
+            </div>
+            <div class="derecha">
+                <div class="opciones">
+                    <div>
+                        <a class="hover-linea-a" href="./inicio_sesion.html" >Inicio de sesion</a>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+                <div class="opciones">
+                    <div>
+                        <a class="hover-linea-a" href="./nosotros.html">Nosostros</a>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/linea_animada.js"></script>
+</body>
+</html>

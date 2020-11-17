@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Servicio</title>
+    <link rel="stylesheet" href="./css/barra.css">
+    <link rel="stylesheet" href="./css/solicitar.css">
+</head>
+<body>
+
+    <script>
+        if(!localStorage.getItem("datos")){
+            location.href ="./index.html"
+        }
+    </script>
+
+    <div class="barralateral">
+
+        <div class="izquierda">
+            
+            <div class="opciones">
+                <div >
+                    <a href="#" class="hover-linea-a">Solicitar</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+            <div class="opciones">
+                <div >
+                    <a href="#" class="hover-linea-a">Trabajadores</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+            <div class="opciones">
+                <div >
+                    <a href="#" class="hover-linea-a">Nosostros</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+ 
+        </div>
+        
+
+        <div class="derecha">
+            <div class="imagen_perfil">
+                <img class="imagen-perfil-pequeña" src="" alt="">
+            </div>
+            
+
+            <div class="texto_abajo">
+                <a id="press" onclick="salir_cuenta()">Salir de la cuenta</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="abajo"> 
+
+        <div class="abajo-derecha">
+            <div class="pastilla">
+                <div class="pastilla-datos">
+
+                    <p class="servicio-totulo">
+                        titulo 1
+                    </p>
+                    
+                </div>
+                <div class="pastilla-img">
+                    <img src="./img/icono-herramienta.png" alt="">
+                </div>
+            </div>
+
+            <div class="pastilla">
+                <div class="pastilla-datos">
+
+                    <p class="servicio-totulo">
+                        titulo 1
+                    </p>
+                    
+                </div>
+                <div class="pastilla-img">
+                    <img src="./img/icono-herramienta.png" alt="">
+                </div>
+            </div>
+
+            <div class="pastilla">
+                <div class="pastilla-datos">
+
+                    <p class="servicio-totulo">
+                        titulo 1
+                    </p>
+                    
+                </div>
+                <div class="pastilla-img">
+                    <img src="./img/icono-herramienta.png" alt="">
+                </div>
+            </div>
+
+            <div class="pastilla">
+                <div class="pastilla-datos">
+
+                    <p class="servicio-totulo">
+                        titulo 1
+                    </p>
+                    
+                </div>
+                <div class="pastilla-img">
+                    <img src="./img/icono-herramienta.png" alt="">
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="abajo-izquierda">
+            
+            <div class="datos_del_perfil">
+                <img src="" alt=""  class="imagen_perfil-abajo">
+            </div>
+            
+            <div class="datos_del_perfil">
+                <div>
+                    <p class="centrar" id="Anombre"> </p>
+                    <p class="centrar" id="Aapellido"> </p>
+                    <p class="centrar" id="Aemail"> </p>
+
+                    <div id="clockdate">
+                        <div class="clockdate-wrapper">
+                          <div id="clock" class="hora"></div>
+                        </div>
+                      </div>
+
+                </div>
+                
+            </div>
+        </div>
+            
+    </div>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    
+            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    
+            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    
+            <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyDXERlyEvWIVgpBZCiNzMPL1h85lLLDp3s",
+                authDomain: "servicioandroid-d0467.firebaseapp.com",
+                databaseURL: "https://servicioandroid-d0467.firebaseio.com",
+                projectId: "servicioandroid-d0467",
+                storageBucket: "servicioandroid-d0467.appspot.com",
+                messagingSenderId: "884923458394",
+                appId: "1:884923458394:web:fbc2f25bd19a3b79198963",
+                measurementId: "G-0V75QJ5P9K"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            </script>
+
+    <script src="./js/servicios.js"></script>
+</body>
+</html>

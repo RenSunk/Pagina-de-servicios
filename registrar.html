@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/barra.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("datos")) {
+            location.href = "./solicitarservicio.html"
+        }
+    </script>
+
+
+    <div class="barralateral">
+        <div class="izquierda">
+            <div class="opciones">
+                <div>
+                    <a class="hover-linea-a" href="./index.html">Inicio</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+            <div class="opciones">
+                <div>
+                    <a class="hover-linea-a" href="./trabaja.html">Trabaja con nosostros</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+        </div>
+        <div class="centro">
+            <a href="./servicio.html">Servicios</a>
+        </div>
+        <div class="derecha">
+            <div class="opciones">
+                <div>
+                    <a class="hover-linea-a" href="./inicio_sesion.html">Inicio de sesion</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+            <div class="opciones">
+                <div>
+                    <a class="hover-linea-a" href="./nosotros.html">Nosostros</a>
+                    <div class="linea"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="abajo">
+
+        <div class="contimg">
+            <img src="./img/494641-PHESOO-113.jpg" alt="">
+            <a href='https://www.freepik.es/vectores/plantilla'>Vector de Plantilla creado por freepik -
+                www.freepik.es</a>
+        </div>
+
+
+
+        <div class="cont">
+            <div>
+                <div class="inicio">
+                    <div class="inicio-div">
+                        <div class="opciones opciones-inicio">
+                            <div>
+                                <a class="hover-linea-a" href="./inicio_sesion.html">Inicio de sesion</a>
+                                <div class="linea"></div>
+                            </div>
+                        </div>
+                        <div class="opciones opciones-inicio">
+                            <div>
+                                <a class="hover-linea-a" href="./registrar.html">Registrar cuenta</a>
+                                <div class="linea"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="texto">
+    
+                    <form action="registrar.html" method="post">
+                        <p id=mensaje></p>
+                        <p>Nombres</p>
+                        <input id="Rnombre" type="text" name="nombre">
+                        <p>Apellido</p>
+                        <input id="Rapellido" type="text" name="apellido">
+                        <p>Correo Electronico(E-mail)</p>
+                        <input id="Remail" type="text" name="email">
+                        <p>Contraseña</p>
+                        <input id="Rcontra" type="password" name="contra">
+                        <p>Confirmar Contraseña</p>
+                        <input id="Rcontrav" type="password" name="confirmarcontra">
+    
+                        <div class="boton">
+                            <a href="#" onclick="registrar_usuario()">Enviar</a>
+                        </div>
+                        
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDXERlyEvWIVgpBZCiNzMPL1h85lLLDp3s",
+            authDomain: "servicioandroid-d0467.firebaseapp.com",
+            databaseURL: "https://servicioandroid-d0467.firebaseio.com",
+            projectId: "servicioandroid-d0467",
+            storageBucket: "servicioandroid-d0467.appspot.com",
+            messagingSenderId: "884923458394",
+            appId: "1:884923458394:web:fbc2f25bd19a3b79198963",
+            measurementId: "G-0V75QJ5P9K"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="./js/registro.js"></script>
+</body>
+
+</html>
